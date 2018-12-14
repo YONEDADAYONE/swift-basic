@@ -10,9 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let name:String = "名前"
+    let number:Int = 10
+    let decimal:Double = 0.01
+    let deliberation:Bool = true
+    
+    let user:[String:String] = [
+        
+        "apple":"りんご",
+        "grape":"ぶどう",
+        "peach":"桃"
+    
+    ]
+    
+    let numbers:[Int] = [1,2,3,4,5,6,7,8,9]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print(name)
+        print(number)
+        print(decimal)
+        print(deliberation)
+        print(user)
+        print(numbers)
+        print(numbers[3])
     }
 
 
