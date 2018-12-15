@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         call()
-        print("終了")
+        print("再提出")
     }
     
     
