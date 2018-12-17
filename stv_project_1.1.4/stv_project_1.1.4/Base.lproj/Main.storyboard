@@ -10,40 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Account-->
+        <!--View Controller-->
         <scene sceneID="PrE-Jq-Voc">
             <objects>
-                <viewController id="YIE-gw-wjx" customClass="Account" customModule="stv_project_1_1_4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YIE-gw-wjx" customClass="ViewController" customModule="stv_project_1_1_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY1-lL-4w2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fd-2g-aJM">
-                                <rect key="frame" x="164" y="361" width="46" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Button:" destination="YIE-gw-wjx" eventType="touchUpInside" id="0dg-sf-ojD"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-NR-A1m">
-                                <rect key="frame" x="164" y="162" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eZR-MK-5N8"/>
                     </view>
-                    <connections>
-                        <outlet property="label" destination="DGZ-NR-A1m" id="niH-2r-vXq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Pd-tc-qIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400.80000000000001" y="-54.422788605697157"/>
+            <point key="canvasLocation" x="-1196" y="-72"/>
         </scene>
     </scenes>
 </document>

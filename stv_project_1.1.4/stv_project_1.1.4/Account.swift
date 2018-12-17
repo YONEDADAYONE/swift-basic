@@ -7,44 +7,25 @@
 //
 
 import UIKit
+import Foundation
 
-class Account: UIViewController {
-
-    let man_name:String = "太郎"
-    let woman_name:String = "花子"
-    let man_age:Int = 25
-    let woman_age:Int = 19
-    let man_type:String = "男性"
-    let woman_type:String = "女性"
-    let man_likes_language = "swift"
-    let woman_likes_language = "kotlin"
+class Account {
+    var name: String
+    let language:String
+    let gender:String
+    let age: Int
     
-    let random = arc4random_uniform(2)
-    
-    @IBOutlet weak var label: UILabel!
-    
-    @IBAction func Button(_ sender: UIButton) {
-        result()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // 初期化時に呼ばれる
+    init(name: String,language:String,gender:String,age: Int) {
+        self.name = name // 引数の変数名とクラスのプロパティを区別するため、selfをつける
+        self.language = language // 定数もinitの中なら設定できる
+        self.gender = gender
+        self.age = age
         
     }
     
-    func result(){
-        if random == 0 {
-            label.text = "あなたの性別は\(man_type)です"
-            print("\(man_name)君は、\(man_likes_language)が得意な\(man_age)歳です。")
-        } else if random == 1 {
-            label.text = "あなたの性別は\(woman_type)です"
-            print("\(woman_name)さんは、\(woman_likes_language)が得意な\(woman_age)歳です。")
-        } else {
-            print("エラー")
-        }
-    }
     
-
-
-
+    func result() {
+        print("\(name)は\(language)が得意な\(age)歳です")
+    }
 }
