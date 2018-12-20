@@ -9,36 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let user:[String:String] = ["name":"Yoneda"]
-    
-    var i:Int? = nil
-    
-    var change:String? = "オプショナルチェンジングです。"
-    
+    let user: [String: String] = ["name": "Yoneda"]
+    var suuji: Int? = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        call()
-        print("終了")
+        callName()
+        callSuuji()
+        callChange()
     }
     
-    
-    
-    func call() {
-        if user["name"] != nil {
-            let name:String = user["name"]!
-            print(name)
-            
-            let resulti:Int = i ?? 10
-            print(resulti)
-            
-            let change2 = change!.lowercased()
-            print(change2)
+    func callName() {
+        if let user: String = user["name"] {
+            print(user)
         }
-        
     }
     
+    func callSuuji() {
+        let result: Int = suuji ?? 5
+        print(result)
+    }
     
-    
+    func callChange() {
+        let change: String? = "Optional Chaining"
+        print(change as Any)
+    }
 }
-
