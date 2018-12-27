@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  stv_project_1.1.2
+//  stv_project_1.1.1
 //
-//  Created by 米田大弥 on 2018/12/15.
+//  Created by 米田大弥 on 2018/12/13.
 //  Copyright © 2018年 hiroya. All rights reserved.
 //
 
